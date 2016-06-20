@@ -1,4 +1,4 @@
-class Devise::InvitationsController < DeviseControlleren
+class Devise::InvitationsController < DeviseController
 
 	def index
 	end

@@ -1,0 +1,24 @@
+
+ 
+<%if current_user%>
+
+<h1> this is home page
+
+<a href="<%=new_user_invitation_path%>">invite</a>
+	<a href="<%=POST_path%>">you want to post</a>
+</h1>
+
+
+
+
+</br>
+
+<h1>Listing posts</h1>
+
+
+
+Signed in as <%= current_user.email%>
+
+
+
+<% end %>

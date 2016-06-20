@@ -1,0 +1,25 @@
+
+ 
+<%if current_user%>
+
+<h1> this is home page
+
+
+	
+</h1>
+
+<img src="<%= current_user.image.url(:thumb) %>" />
+<a href="<%=new_user_invitation_path%>">invite</a>
+<a href="<%=new_post_path%>">new post</a>
+</br>
+
+
+
+
+
+
+<p>Signed in as <%= current_user.email%></p>
+
+
+
+<% end %>
